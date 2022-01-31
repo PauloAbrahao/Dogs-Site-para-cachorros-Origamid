@@ -7,6 +7,7 @@ import { UserContext } from "../../UserContext";
 import { USER_POST } from "../../api";
 
 import React from "react";
+import Head from "../Helper/Head";
 
 const LoginCreate = () => {
   const username = useForm();
@@ -33,6 +34,7 @@ const LoginCreate = () => {
 
   return (
     <section className="animeLeft">
+      <Head title='Crie sua conta' />
       <h1 className="title">Cadastre-se</h1>
       <form onSubmit={handleSubmit}>
         <Input label="Usuário" type="text" name="username" {...username} />
